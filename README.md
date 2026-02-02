@@ -1,25 +1,21 @@
-# Challenge 1: User Details
+# ABTalks Challenges
 
-A simple interactive Python script that collects and displays user information.
+A collection of Python challenges for ABTalks.
 
-## 📝 Description
+## Challenges
 
-This script prompts the user to input their **Name**, **Age**, and **City**. It then processes this input to display a formatted summary and a personalized greeting.
+### Challenge 1: User Details
+A simple interactive script that collects and displays user information.
 
-## 🚀 Usage
+**Description:**
+Prompts the user for their **Name**, **Age**, and **City**, then displays a formatted summary and greeting.
 
-### Prerequisites
-- Python 3.x installed on your system.
-
-### Running the Script
-Open your terminal or command prompt, navigate to the project directory, and run:
-
+**Usage:**
 ```bash
 python Challenge1.py
 ```
 
-## 📋 Example Output
-
+**Example Output:**
 ```text
 Enter your name: Alice
 Enter your age: 25
@@ -34,7 +30,34 @@ Hello Alice !
 You are 25 years old and you live in New York
 ```
 
+---
+
+### Challenge 2: Tokenization
+Demonstrates basic Natural Language Processing (NLP) using the NLTK library.
+
+**Description:**
+Performs sentence and word tokenization on a sample text string.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install nltk
+```
+The script automatically downloads the required NLTK data (`punkt`, `punkt_tab`).
+
+Run the script:
+```bash
+python Challenge2.py
+```
+
+**Example Output:**
+```text
+['Hi everyone, today is day 2 of the challenge of ABTalks.today we are doing the tokenization.']
+['Hi', 'everyone', ',', 'today', 'is', 'day', '2', 'of', 'the', 'challenge', 'of', 'ABTalks.today', 'we', 'are', 'doing', 'the', 'tokenization', '.']
+```
+
 ## 📂 Project Structure
 
-- `Challenge1.py`: The main Python script.
-- `README.md`: This documentation file.
+- `Challenge1.py`: User details script.
+- `Challenge2.py`: Tokenization script.
+- `README.md`: Project documentation.
