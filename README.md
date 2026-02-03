@@ -56,8 +56,39 @@ python Challenge2.py
 ['Hi', 'everyone', ',', 'today', 'is', 'day', '2', 'of', 'the', 'challenge', 'of', 'ABTalks.today', 'we', 'are', 'doing', 'the', 'tokenization', '.']
 ```
 
+### Challenge 3: Stemming vs Lemmatization
+Demonstrates the difference between Stemming and Lemmatization using NLTK.
+
+**Description:**
+Performs text cleaning (tokenization, removing HTML tags/non-alphabetic characters), and then compares the results of PorterStemmer and WordNetLemmatizer on a sample movie review.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install nltk
+```
+The script automatically downloads required NLTK data (`punkt`, `wordnet`, `omw-1.4`).
+
+Run the script:
+```bash
+python Challenge3.py
+```
+
+**Example Output:**
+```text
+Original Words (first 20):
+['bad', 'plot', 'bad', 'dialogue', 'bad', 'acting', 'idiotic', 'directing', 'the', 'annoying', 'porn', 'groove', 'soundtrack', 'that', 'ran', 'continually', 'over', 'the', 'overacted', 'script']
+
+Stemmed Words (first 20):
+['bad', 'plot', 'bad', 'dialogu', 'bad', 'act', 'idiot', 'direct', 'the', 'annoy', 'porn', 'groov', 'soundtrack', 'that', 'ran', 'continu', 'over', 'the', 'overact', 'script']
+
+Lemmatized Words (first 20):
+['bad', 'plot', 'bad', 'dialogue', 'bad', 'acting', 'idiotic', 'directing', 'the', 'annoying', 'porn', 'groove', 'soundtrack', 'that', 'ran', 'continually', 'over', 'the', 'overacted', 'script']
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
 - `Challenge2.py`: Tokenization script.
+- `Challenge3.py`: Stemming vs Lemmatization script.
 - `README.md`: Project documentation.
