@@ -86,9 +86,34 @@ Lemmatized Words (first 20):
 ['bad', 'plot', 'bad', 'dialogue', 'bad', 'acting', 'idiotic', 'directing', 'the', 'annoying', 'porn', 'groove', 'soundtrack', 'that', 'ran', 'continually', 'over', 'the', 'overacted', 'script']
 ```
 
+### Challenge 4: Stopwords Removal
+Demonstrates how to clean text by removing stopwords, punctuation, and converting to lowercase using NLTK and Regex.
+
+**Description:**
+Takes a noisy text (with special characters, URLs, HTML tags), cleans it using Regex, tokenizes it, and removes common English stopwords.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install nltk
+```
+The script automatically downloads required NLTK data (`punkt`, `stopwords`).
+
+Run the script:
+```bash
+python Challenge4.py
+```
+
+**Example Output:**
+```text
+Cleaned Text:
+omg movie sooo goood cant even explain felt totally worth watching even night audio like sooo bad check httptinyurlcomxyz brbr btw watched x still wan na watch
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
 - `Challenge2.py`: Tokenization script.
 - `Challenge3.py`: Stemming vs Lemmatization script.
+- `Challenge4.py`: Stopwords removal script.
 - `README.md`: Project documentation.
