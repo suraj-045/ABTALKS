@@ -110,10 +110,41 @@ Cleaned Text:
 omg movie sooo goood cant even explain felt totally worth watching even night audio like sooo bad check httptinyurlcomxyz brbr btw watched x still wan na watch
 ```
 
+### Challenge 5: News Dataset Cleaning
+Demonstrates text preprocessing on a real-world style CSV dataset.
+
+**Description:**
+Reads a noisy news dataset (`news_dataset.csv`), combines title and content, and performs text cleaning (lowercasing, removing special characters/numbers, tokenization, and stopword removal).
+
+**Usage:**
+Prerequisites:
+```bash
+pip install pandas nltk
+```
+The script automatically downloads required NLTK data (`punkt`, `stopwords`).
+
+Run the script:
+```bash
+python Challenge5.py
+```
+
+**Example Dataset (`news_dataset.csv`):**
+Contains fields: `id`, `title`, `content`.
+
+**Example Output:**
+```text
+Cleaned News Articles:
+Article 1: breaking election results election results finally shocker elections...
+Article 2: tech giants release new ai models google openai released new models...
+...
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
 - `Challenge2.py`: Tokenization script.
 - `Challenge3.py`: Stemming vs Lemmatization script.
 - `Challenge4.py`: Stopwords removal script.
+- `Challenge5.py`: News dataset cleaning script.
+- `news_dataset.csv`: Sample dataset for Challenge 5.
 - `README.md`: Project documentation.
