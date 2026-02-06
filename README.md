@@ -139,6 +139,38 @@ Article 2: tech giants release new ai models google openai released new models..
 ...
 ```
 
+### Challenge 6: Word Frequency Visualization
+Analyzes word frequency in the news dataset and creates a bar chart of the top 20 most frequent words.
+
+**Description:**
+Reads the `news_dataset.csv`, combines title and content, performs text cleaning (tokenization, stopword removal), counts word frequencies, and generates a bar chart saved as an image.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install pandas nltk matplotlib
+```
+The script automatically downloads required NLTK data (`punkt`, `stopwords`) if missing.
+
+Run the script:
+```bash
+python Challenge6.py
+```
+
+**Output:**
+- Prints the top 20 most frequent words to the console.
+- Saves a bar chart visualization to `top_20_words.png`.
+
+**Example Console Output:**
+```text
+Top 20 Most Frequent Words:
+
+new: 10
+pm: 3
+match: 3
+...
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -146,5 +178,7 @@ Article 2: tech giants release new ai models google openai released new models..
 - `Challenge3.py`: Stemming vs Lemmatization script.
 - `Challenge4.py`: Stopwords removal script.
 - `Challenge5.py`: News dataset cleaning script.
-- `news_dataset.csv`: Sample dataset for Challenge 5.
+- `Challenge6.py`: Word frequency visualization script.
+- `news_dataset.csv`: Sample dataset for Challenge 5 & 6.
+- `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
