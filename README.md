@@ -171,6 +171,40 @@ match: 3
 ...
 ```
 
+### Challenge 8: WordPiece Tokenization (Hugging Face)
+Demonstrates subword tokenization using the Hugging Face `tokenizers` library.
+
+**Description:**
+Trains a WordPiece tokenizer on the `news_dataset.csv` corpus to handle out-of-vocabulary words by breaking them into subword units. This approach is widely used in modern NLP models like BERT.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install pandas tokenizers
+```
+
+Run the script:
+```bash
+python Challenge8.py
+```
+
+**Output:**
+- Prints the vocabulary size.
+- Shows tokenization examples for words.
+
+**Example Output:**
+```text
+Vocabulary Size: ~1000
+
+WordPiece Tokenization Examples:
+
+unhappiness → ['u', '##n', '##h', '##ap', '##p', '##in', '##ess']
+playing football → ['pl', '##ay', '##ing', 'f', '##o', '##otball']
+cryptocurrency → ['crypto', '##c', '##u', '##rr', '##en', '##c', '##y']
+governnmentt → ['go', '##ver', '##n', '##n', '##m', '##en', '##t', '##t']
+```
+*(Note: Tokenization splits may vary based on the training dataset size and content)*
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -179,6 +213,7 @@ match: 3
 - `Challenge4.py`: Stopwords removal script.
 - `Challenge5.py`: News dataset cleaning script.
 - `Challenge6.py`: Word frequency visualization script.
-- `news_dataset.csv`: Sample dataset for Challenge 5 & 6.
+- `Challenge8.py`: WordPiece tokenization script (Hugging Face).
+- `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
