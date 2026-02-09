@@ -205,6 +205,44 @@ governnmentt → ['go', '##ver', '##n', '##n', '##m', '##en', '##t', '##t']
 ```
 *(Note: Tokenization splits may vary based on the training dataset size and content)*
 
+### Challenge 9: Tokenization Comparison
+Demonstrates and compares different tokenization techniques: Whitespace, BPE (Byte Pair Encoding), and WordPiece.
+
+**Description:**
+Uses the `tokenizers` library to tokenize a sample text using three different methods:
+1.  **Whitespace Tokenization**: Simple splitting by whitespace.
+2.  **BPE Tokenization**: Subword tokenization using Byte Pair Encoding.
+3.  **WordPiece Tokenization**: Subword tokenization using the WordPiece algorithm (used in BERT).
+
+**Usage:**
+Prerequisites:
+```bash
+pip install tokenizers
+```
+
+Run the script:
+```bash
+python Challenge9.py
+```
+
+**Example Output:**
+```text
+Input Text:
+ Cryptocurrency markets are experiencing high volatility in 2024 ...
+
+1️⃣ Whitespace Tokenization:
+['Cryptocurrency', 'markets', 'are', 'experiencing', 'high', 'volatility', 'in', '2024', 'as', 'global', 'investors', 'react', 'to', 'economic', 'uncertainty', 'and', 'rapid', 'technological', 'innovation.']
+Token Count: 19
+
+2️⃣ BPE Tokenization:
+['Cry', 'pt', 'oc', 'ur', 're', 'nc', 'y', 'mark', 'ets', 'are', 'ex', 'per', 'i', 'enc', 'ing', 'high', 'vol', 'at', 'il', 'ity', 'in', '20', '24', 'as', 'gl', 'ob', 'al', 'in', 've', 'st', 'ors', 're', 'act', 'to', 'ec', 'on', 'om', 'ic', 'un', 'ce', 'rt', 'ai', 'nt', 'y', 'and', 'rap', 'id', 'te', 'ch', 'no', 'lo', 'gi', 'cal', 'in', 'no', 'va', 'tion', '.']
+Token Count: 58
+
+3️⃣ WordPiece Tokenization:
+['Cry', '##pt', '##oc', '##ur', '##re', '##nc', '##y', 'mar', '##ke', '##ts', 'are', 'ex', '##pe', '##ri', '##en', '##ci', '##ng', 'high', 'vo', '##la', '##ti', '##li', '##ty', 'in', '202', '##4', 'as', 'glo', '##ba', '##l', 'in', '##ve', '##st', '##or', '##s', 're', '##ac', '##t', 'to', 'ec', '##on', '##om', '##ic', 'un', '##ce', '##rt', '##ai', '##nt', '##y', 'and', 'ra', '##pi', '##d', 'te', '##ch', '##no', '##lo', '##gi', '##ca', '##l', 'in', '##no', '##va', '##ti', '##on', '.']
+Token Count: 66
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -214,6 +252,7 @@ governnmentt → ['go', '##ver', '##n', '##n', '##m', '##en', '##t', '##t']
 - `Challenge5.py`: News dataset cleaning script.
 - `Challenge6.py`: Word frequency visualization script.
 - `Challenge8.py`: WordPiece tokenization script (Hugging Face).
+- `Challenge9.py`: Tokenization comparison script (Whitespace, BPE, WordPiece).
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.

@@ -4,7 +4,7 @@ from tokenizers.models import WordPiece
 from tokenizers.trainers import WordPieceTrainer
 from tokenizers.pre_tokenizers import Whitespace
 
-# STEP 1: Read the CSV dataset (same as Day 5 & 6)
+# STEP 1: Read the CSV dataset 
 df = pd.read_csv("news_dataset.csv", engine="python")
 
 # STEP 2: Combine title and content
@@ -29,12 +29,7 @@ tokenizer.train_from_iterator(corpus, trainer)
 print("Vocabulary Size:", len(tokenizer.get_vocab()))
 
 # STEP 7: Show tokenization examples (MANDATORY)
-examples = [
-    "unhappiness",
-    "playing football",
-    "cryptocurrency",
-    "governnmentt"
-]
+examples = ["unhappiness", "playing football","cryptocurrency", "governnmentt"]
 
 print("\nWordPiece Tokenization Examples:\n")
 for text in examples:
