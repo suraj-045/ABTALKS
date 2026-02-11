@@ -243,6 +243,45 @@ Token Count: 58
 Token Count: 66
 ```
 
+### Challenge 10: Feature Extraction (BoW & TF-IDF)
+Demonstrates text feature extraction techniques using Scikit-Learn.
+
+**Description:**
+Converts a collection of text documents into numerical matrices using:
+1.  **Bag of Words (BoW)**: Counts word occurrences using `CountVectorizer`.
+2.  **TF-IDF**: Weighs words based on their frequency in a document vs. the corpus using `TfidfVectorizer`.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install scikit-learn
+```
+
+Run the script:
+```bash
+python Challenge10.py
+```
+
+**Example Output:**
+```text
+Documents:
+AI is helpful
+AI AI makes work easy
+Blockchain improves security
+The system is running fast
+
+--- Bag of Words ---
+Words: ['ai' 'blockchain' 'easy' 'fast' 'helpful' 'improves' 'is' 'makes' 'running' 'security' 'system' 'the' 'work']
+[[1 0 0 0 1 0 1 0 0 0 0 0 0]
+ [2 0 1 0 0 0 0 1 0 0 0 0 1]
+ ... ]
+
+--- TF IDF ---
+Words: ['ai' 'blockchain' 'easy' 'fast' 'helpful' 'improves' 'is' 'makes' 'running' 'security' 'system' 'the' 'work']
+[[0.52 0.   0.   0.   0.66 ... ]
+ ... ]
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -253,6 +292,7 @@ Token Count: 66
 - `Challenge6.py`: Word frequency visualization script.
 - `Challenge8.py`: WordPiece tokenization script (Hugging Face).
 - `Challenge9.py`: Tokenization comparison script (Whitespace, BPE, WordPiece).
+- `Challenge10.py`: Bag of Words and TF-IDF feature extraction script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
