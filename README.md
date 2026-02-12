@@ -282,6 +282,36 @@ Words: ['ai' 'blockchain' 'easy' 'fast' 'helpful' 'improves' 'is' 'makes' 'runni
  ... ]
 ```
 
+### Challenge 11: TF-IDF & Cosine Similarity
+Demonstrates how to compute the similarity between two text documents using TF-IDF (Term Frequency-Inverse Document Frequency) and Cosine Similarity.
+
+**Description:**
+Calculates the cosine similarity score between two documents to determine how similar they are based on their content.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install scikit-learn
+```
+
+Run the script:
+```bash
+python Challenge11.py
+```
+
+**Example Output:**
+```text
+Document 1:
+ Machine learning models help companies analyze large amounts of data to find patterns, make predictions, and improve business decisions.
+
+Document 2:
+ Data science uses algorithms and statistical techniques to study datasets, discover insights, and support smarter decision making in organizations.
+
+-----------------------------
+Cosine Similarity Score:
+0.11391496598792124
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -293,6 +323,7 @@ Words: ['ai' 'blockchain' 'easy' 'fast' 'helpful' 'improves' 'is' 'makes' 'runni
 - `Challenge8.py`: WordPiece tokenization script (Hugging Face).
 - `Challenge9.py`: Tokenization comparison script (Whitespace, BPE, WordPiece).
 - `Challenge10.py`: Bag of Words and TF-IDF feature extraction script.
+- `Challenge11.py`: TF-IDF & Cosine Similarity script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
