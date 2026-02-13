@@ -341,6 +341,38 @@ Original: The system is running fast.
 Output: ['system', 'running', 'fast']
 ```
 
+### Challenge 13: Spam vs Ham Preprocessing
+Demonstrates a text preprocessing pipeline applied to example spam and ham (non-spam) messages.
+
+**Description:**
+Applies lowercasing, symbol/number removal, tokenization, and stopword removal to a set of example messages to prepare them for potential classification.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install nltk
+```
+
+Run the script:
+```bash
+python Challenge13.py
+```
+
+**Example Output:**
+```text
+Original: WIN MONEY NOW!!! Click this link to claim prize
+Processed: ['win', 'money', 'click', 'link', 'claim', 'prize']
+
+Original: Hey bro, are we meeting today?
+Processed: ['hey', 'bro', 'meeting', 'today']
+
+Original: FREE offer just for you!!!
+Processed: ['free', 'offer']
+
+Original: Let's finish our assignment tonight
+Processed: ['lets', 'finish', 'assignment', 'tonight']
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -354,6 +386,7 @@ Output: ['system', 'running', 'fast']
 - `Challenge10.py`: Bag of Words and TF-IDF feature extraction script.
 - `Challenge11.py`: TF-IDF & Cosine Similarity script.
 - `Challenge12.py`: Simple Text Pipeline script.
+- `Challenge13.py`: Spam vs Ham Preprocessing script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
