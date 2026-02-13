@@ -312,6 +312,35 @@ Cosine Similarity Score:
 0.11391496598792124
 ```
 
+### Challenge 12: Simple Text Pipeline
+Demonstrates a basic text processing pipeline that performs lowercasing, punctuation removal, tokenization, and stopword removal.
+
+**Description:**
+A simple pipeline function that takes a raw string, cleans it by removing non-alphabetic characters and stopwords, and returns a list of tokens.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install nltk
+```
+
+Run the script:
+```bash
+python Challenge12.py
+```
+
+**Example Output:**
+```text
+Original: Why is AI amazing!
+Output: ['ai', 'amazing']
+
+Original: Machine learning helps automation.
+Output: ['machine', 'learning', 'helps', 'automation']
+
+Original: The system is running fast.
+Output: ['system', 'running', 'fast']
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -324,6 +353,7 @@ Cosine Similarity Score:
 - `Challenge9.py`: Tokenization comparison script (Whitespace, BPE, WordPiece).
 - `Challenge10.py`: Bag of Words and TF-IDF feature extraction script.
 - `Challenge11.py`: TF-IDF & Cosine Similarity script.
+- `Challenge12.py`: Simple Text Pipeline script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
