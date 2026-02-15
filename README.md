@@ -373,6 +373,47 @@ Original: Let's finish our assignment tonight
 Processed: ['lets', 'finish', 'assignment', 'tonight']
 ```
 
+### Challenge 14: NLP Pipeline & Feature Extraction
+A comprehensive script combining text cleaning, tokenization, word frequency analysis, and feature extraction (BoW & TF-IDF).
+
+**Description:**
+Demonstrates a full NLP workflow:
+1.  **Cleaning & Tokenizing**: Lowercasing, removing non-alphabetic characters, and removing stopwords.
+2.  **Word Frequency**: Counting occurrences of each word.
+3.  **Feature Extraction**: Generating Bag of Words (BoW) and TF-IDF matrices.
+4.  **Pipeline Function**: A reusable function for text preprocessing.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install nltk scikit-learn
+```
+
+Run the script:
+```bash
+python Challenge14.py
+```
+
+**Example Output:**
+```text
+Cleaned Words:
+['ai', 'rapidly', 'transforming', 'modern', 'industries', ...]
+
+Word Frequency:
+Counter({'data': 2, 'ai': 1, 'rapidly': 1, ...})
+
+BoW Words:
+['adapt' 'ai' 'analysis' 'and' ... ]
+[[1 1 1 3 ... ]]
+
+TF-IDF Words:
+['adapt' 'ai' 'analysis' 'and' ... ]
+[[0.12 0.12 0.12 0.36 ... ]]
+
+Pipeline Test:
+['machine', 'learning', 'helps', 'ai', 'systems']
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -387,6 +428,7 @@ Processed: ['lets', 'finish', 'assignment', 'tonight']
 - `Challenge11.py`: TF-IDF & Cosine Similarity script.
 - `Challenge12.py`: Simple Text Pipeline script.
 - `Challenge13.py`: Spam vs Ham Preprocessing script.
+- `Challenge14.py`: NLP Pipeline & Feature Extraction script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
