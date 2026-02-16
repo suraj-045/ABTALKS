@@ -414,6 +414,45 @@ Pipeline Test:
 ['machine', 'learning', 'helps', 'ai', 'systems']
 ```
 
+### Challenge 15: Simple Word Embeddings
+Demonstrates basic word embedding operations using NumPy, including creating a manual embedding matrix, calculating dot products, and computing cosine similarity.
+
+**Description:**
+Uses a manually defined embedding matrix to represent sentences/words and explores vector operations:
+1.  **Embedding Matrix**: A small manual example of word embeddings.
+2.  **Dot Product**: Calculates the dot product of the matrix with its transpose.
+3.  **Cosine Similarity**: Computes similarity between the vectors.
+4.  **Mean Embedding**: Calculates the average vector of the embeddings.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install numpy
+```
+
+Run the script:
+```bash
+python Challenge15.py
+```
+
+**Example Output:**
+```text
+Embedding Matrix:
+[[0.8 0.2 0.6]
+ [0.7 0.3 0.5]
+ [0.2 0.9 0.4]]
+
+...
+
+Cosine Similarity Matrix:
+[[1.         0.99022095 0.56591426]
+ [0.99022095 1.         0.66623908]
+ [0.56591426 0.66623908 1.        ]]
+
+Mean Embedding:
+[0.56666667 0.46666667 0.5       ]
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -429,6 +468,7 @@ Pipeline Test:
 - `Challenge12.py`: Simple Text Pipeline script.
 - `Challenge13.py`: Spam vs Ham Preprocessing script.
 - `Challenge14.py`: NLP Pipeline & Feature Extraction script.
+- `Challenge15.py`: Simple Word Embeddings script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
