@@ -453,6 +453,45 @@ Mean Embedding:
 [0.56666667 0.46666667 0.5       ]
 ```
 
+### Challenge 16: Matrix Multiplication for Embeddings
+Demonstrates matrix operations commonly used in Deep Learning, specifically dot products and matrix multiplication with embeddings using NumPy.
+
+**Description:**
+Performs matrix multiplication on a manually defined embedding matrix to show relationships between vectors.
+1.  **Embedding Matrix**: A small manual example of word embeddings.
+2.  **Dot Product**: Calculates the dot product between two specific vectors.
+3.  **Matrix Multiplication**: Multiplies the embedding matrix by its transpose ($A \cdot A^T$) to compute similarities between all pairs of vectors.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install numpy
+```
+
+Run the script:
+```bash
+python Challenge16.py
+```
+
+**Example Output:**
+```text
+Embedding Matrix:
+[[0.8 0.2 0.6]
+ [0.7 0.3 0.5]
+ [0.2 0.9 0.4]]
+
+Matrix Shape:
+(3, 3)
+
+Dot Product (Vector 1 · Vector 2):
+0.9199999999999999
+
+Matrix Multiplication Result:
+[[1.04 0.92 0.58]
+ [0.92 0.83 0.61]
+ [0.58 0.61 1.01]]
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -469,6 +508,7 @@ Mean Embedding:
 - `Challenge13.py`: Spam vs Ham Preprocessing script.
 - `Challenge14.py`: NLP Pipeline & Feature Extraction script.
 - `Challenge15.py`: Simple Word Embeddings script.
+- `Challenge16.py`: Matrix Multiplication for Embeddings script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
