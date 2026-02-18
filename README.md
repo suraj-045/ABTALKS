@@ -492,6 +492,40 @@ Matrix Multiplication Result:
  [0.58 0.61 1.01]]
 ```
 
+### Challenge 17: Word Frequency & Probability Distribution
+Demonstrates statistical analysis of text, including word probability calculation and modeling word occurrences using the Poisson distribution.
+
+**Description:**
+Analyzes a sample text to compute word frequencies and probabilities. It also uses the SciPy library to calculate the probability of a specific word count occurring (e.g., k=2) based on the observed frequency (lambda).
+1.  **Word Frequencies**: Counts occurrences of each word.
+2.  **Word Probabilities**: Calculates the probability $P(w) = \frac{count(w)}{total\_words}$.
+3.  **Poisson Distribution**: Models distribution of word counts.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install nltk scipy
+```
+
+Run the script:
+```bash
+python Challenge17.py
+```
+
+**Example Output:**
+```text
+Words:
+['artificial', 'intelligence', 'is', 'helping', 'businesses', 'automate', 'tasks', 'and', 'improve', 'decision', 'making', '.', 'ai', 'systems', 'analyze', 'large', 'amounts', 'of', 'data', 'to', 'find', 'useful', 'patterns', '.', 'many', 'industries', 'use', 'machine', 'learning', 'to', 'increase', 'efficiency', 'and', 'reduce', 'manual', 'work', '.']
+
+Word Probabilities:
+artificial : 0.027
+intelligence : 0.027
+...
+
+Poisson Example (k=2, lambda=ai_count):
+0.18393972058572114
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -509,6 +543,7 @@ Matrix Multiplication Result:
 - `Challenge14.py`: NLP Pipeline & Feature Extraction script.
 - `Challenge15.py`: Simple Word Embeddings script.
 - `Challenge16.py`: Matrix Multiplication for Embeddings script.
+- `Challenge17.py`: Word Frequency & Probability Distribution script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
