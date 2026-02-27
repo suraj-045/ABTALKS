@@ -601,6 +601,38 @@ Cosine Similarity After Normalization:
 0.7333333333333333
 ```
 
+### Challenge 20: Cosine Similarity & Euclidean Distance
+Demonstrates cosine similarity and Euclidean distance computation between embedding vectors with an automatic similarity interpretation.
+
+**Description:**
+Compares two embedding vectors using cosine similarity and Euclidean distance, with shape validation and zero-division safety. Provides a human-readable interpretation of the similarity score.
+1.  **Embedding Vectors**: Manually defined vectors.
+2.  **Shape Validation**: Ensures both vectors have the same dimensions.
+3.  **Cosine Similarity**: With zero-norm safety check.
+4.  **Euclidean Distance**: L2 distance between vectors.
+5.  **Interpretation**: Categorizes similarity as high, moderate, or low.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install numpy
+```
+
+Run the script:
+```bash
+python Challenge20.py
+```
+
+**Example Output:**
+```text
+Vector1: [0.5 0.8 0.2]
+Vector2: [0.6 0.7 0.3]
+
+Cosine Similarity: 0.9839712885459011
+Euclidean Distance: 0.17320508075688776
+Interpretation: Vectors are highly similar.
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -621,6 +653,7 @@ Cosine Similarity After Normalization:
 - `Challenge17.py`: Word Frequency & Probability Distribution script.
 - `Challenge18.py`: Vector Optimization & Cosine Similarity script.
 - `Challenge19.py`: L2 Normalization & Cosine Similarity script.
+- `Challenge20.py`: Cosine Similarity & Euclidean Distance script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
