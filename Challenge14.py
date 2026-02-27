@@ -10,8 +10,8 @@ nltk.download('stopwords')
 
 # example text (you can change)
 text = """AI is rapidly transforming modern industries by improving automation, data analysis, and decision making.
-         Many companies are using machine learning systems to understand customer behavior, reduce manual work, and increase productivity.
-         As technology continues to evolve, organizations focus on building smarter solutions that can learn from data and adapt to real-world challenges."""
+          Many companies are using machine learning systems to understand customer behavior, reduce manual work, and increase productivity.
+          As technology continues to evolve, organizations focus on building smarter solutions that can learn from data and adapt to real-world challenges."""
 
 # STEP 1 – Cleaning & Tokenizing
 text_lower = text.lower()

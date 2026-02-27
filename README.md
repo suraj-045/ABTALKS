@@ -526,6 +526,43 @@ Poisson Example (k=2, lambda=ai_count):
 0.18393972058572114
 ```
 
+### Challenge 18: Vector Optimization & Cosine Similarity
+Demonstrates how to optimize a vector to maximize similarity with a target vector using SciPy's optimization and cosine similarity.
+
+**Description:**
+Uses SciPy's `minimize` function to optimize a vector so that it becomes closer to a target vector by minimizing the squared distance between them. Cosine similarity is computed before and after optimization to show the improvement.
+1.  **Text Representation**: Manual sentence embedding vectors.
+2.  **Cost Function**: Squared Euclidean distance between vectors.
+3.  **Cosine Similarity**: Measures vector similarity before and after optimization.
+4.  **SciPy Optimization**: Uses `scipy.optimize.minimize` to find the optimal vector.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install numpy scipy
+```
+
+Run the script:
+```bash
+python Challenge18.py
+```
+
+**Example Output:**
+```text
+Original Vectors:
+Vector 1: [0.9 0.1 0.7]
+Vector 2: [0.3 0.8 0.4]
+
+Cosine Similarity Before Optimization:
+0.5765566601970551
+
+Optimized Vector2:
+[0.9 0.1 0.7]
+
+Cosine Similarity After Optimization:
+0.9999999999999998
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -544,6 +581,7 @@ Poisson Example (k=2, lambda=ai_count):
 - `Challenge15.py`: Simple Word Embeddings script.
 - `Challenge16.py`: Matrix Multiplication for Embeddings script.
 - `Challenge17.py`: Word Frequency & Probability Distribution script.
+- `Challenge18.py`: Vector Optimization & Cosine Similarity script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
