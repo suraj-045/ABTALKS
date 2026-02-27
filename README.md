@@ -563,6 +563,44 @@ Cosine Similarity After Optimization:
 0.9999999999999998
 ```
 
+### Challenge 19: L2 Normalization & Cosine Similarity
+Demonstrates L2 (unit) normalization of vectors and its effect on cosine similarity using NumPy.
+
+**Description:**
+Normalizes embedding vectors to unit length using L2 normalization and compares cosine similarity before and after normalization to show that cosine similarity is invariant to vector magnitude.
+1.  **Embedding Vectors**: Manually defined sentence embedding vectors.
+2.  **Cosine Similarity**: Computed before and after normalization.
+3.  **L2 Normalization**: Divides each vector by its L2 norm (with a zero-norm safety check).
+4.  **Invariance Demonstration**: Shows cosine similarity remains unchanged after normalization.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install numpy
+```
+
+Run the script:
+```bash
+python Challenge19.py
+```
+
+**Example Output:**
+```text
+Original Vectors:
+Vector1: [3. 4. 0.]
+Vector2: [1. 2. 2.]
+
+Cosine Similarity Before Normalization:
+0.7333333333333333
+
+Normalized Vectors:
+Normalized Vector1: [0.6 0.8 0. ]
+Normalized Vector2: [0.33333333 0.66666667 0.66666667]
+
+Cosine Similarity After Normalization:
+0.7333333333333333
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -582,6 +620,7 @@ Cosine Similarity After Optimization:
 - `Challenge16.py`: Matrix Multiplication for Embeddings script.
 - `Challenge17.py`: Word Frequency & Probability Distribution script.
 - `Challenge18.py`: Vector Optimization & Cosine Similarity script.
+- `Challenge19.py`: L2 Normalization & Cosine Similarity script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
