@@ -633,6 +633,47 @@ Euclidean Distance: 0.17320508075688776
 Interpretation: Vectors are highly similar.
 ```
 
+### Challenge 22: Spam Classification with Logistic Regression
+Demonstrates text classification using TF-IDF feature extraction and Logistic Regression to distinguish spam from normal messages.
+
+**Description:**
+Builds a simple spam classifier using Scikit-Learn:
+1.  **Dataset**: A small example dataset of spam and normal (ham) messages.
+2.  **TF-IDF Feature Extraction**: Converts text into numerical features using `TfidfVectorizer`.
+3.  **Train-Test Split**: Splits data into training and testing sets (70/30).
+4.  **Logistic Regression**: Trains a classifier on the training data.
+5.  **Evaluation**: Reports accuracy, classification report (precision, recall, F1-score), and confusion matrix.
+
+**Usage:**
+Prerequisites:
+```bash
+pip install pandas scikit-learn
+```
+
+Run the script:
+```bash
+python Challenge22.py
+```
+
+**Example Output:**
+```text
+Accuracy: 1.0
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         2
+           1       1.00      1.00      1.00         1
+
+    accuracy                           1.00         3
+   macro avg       1.00      1.00      1.00         3
+weighted avg       1.00      1.00      1.00         3
+
+Confusion Matrix:
+[[2 0]
+ [0 1]]
+```
+
 ## 📂 Project Structure
 
 - `Challenge1.py`: User details script.
@@ -654,6 +695,7 @@ Interpretation: Vectors are highly similar.
 - `Challenge18.py`: Vector Optimization & Cosine Similarity script.
 - `Challenge19.py`: L2 Normalization & Cosine Similarity script.
 - `Challenge20.py`: Cosine Similarity & Euclidean Distance script.
+- `Challenge22.py`: Spam Classification with Logistic Regression script.
 - `news_dataset.csv`: Sample dataset for Challenge 5, 6 & 8.
 - `top_20_words.png`: Generated plot from Challenge 6.
 - `README.md`: Project documentation.
